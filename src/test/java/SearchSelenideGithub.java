@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class SearchSelenideGithub {
 
     @Test
-    void SearchWikiSelenideGithub () {
+    void searchWikiSelenideGithub () {
         // Откройте страницу Selenide в Github
         open("https://github.com/selenide/selenide");
 
