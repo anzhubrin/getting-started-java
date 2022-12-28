@@ -11,28 +11,24 @@ public class CalcTest {
     @Test
     public void checkAdd() {
         double expectedResult = FIRST_NUM + SECOND_NUM;
-        double actualResult = Calculator.add(FIRST_NUM, SECOND_NUM);
-        Assertions.assertEquals(expectedResult, actualResult, "The result is not correct for add");
+        Assertions.assertEquals(expectedResult, Calculator.add(FIRST_NUM, SECOND_NUM), "The result is not correct for add");
     }
 
     @Test
     public void checkSub() {
         double expectedResult = FIRST_NUM - SECOND_NUM;
-        double actualResult = Calculator.sub(FIRST_NUM, SECOND_NUM);
-        Assertions.assertEquals(expectedResult, actualResult, "The result is not correct for sub");
+        Assertions.assertEquals(expectedResult, Calculator.sub(FIRST_NUM, SECOND_NUM), "The result is not correct for sub");
     }
 
     @Test
     public void checkMult() {
         double expectedResult = FIRST_NUM * SECOND_NUM;
-        double actualResult = Calculator.mult(FIRST_NUM, SECOND_NUM);
-        Assertions.assertEquals(expectedResult, actualResult, "The result is not correct for mult");
+        Assertions.assertEquals(expectedResult, Calculator.mult(FIRST_NUM, SECOND_NUM), "The result is not correct for mult");
     }
 
     @Test
     public void checkDiv() {
         double expectedResult = FIRST_NUM / SECOND_NUM;
-        double actualResult = Calculator.div(FIRST_NUM, SECOND_NUM);
-        Assertions.assertEquals(expectedResult, actualResult, "The result is not correct for div");
+        Assertions.assertEquals(expectedResult, Calculator.div(FIRST_NUM, SECOND_NUM), "The result is not correct for div");
     }
 }
