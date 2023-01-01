@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-// this is not a full list, just the most common
+
 public class Snippets {
 
     void browser_command_examples() {
@@ -26,7 +26,6 @@ public class Snippets {
 
         Selenide.clearBrowserCookies();
         Selenide.clearBrowserLocalStorage();
-        executeJavaScript("sessionStorage.clear();"); // no Selenide command for this yet
 
         Selenide.confirm(); // OK in alert dialogs
         Selenide.dismiss(); // Cancel in alert dialogs
@@ -36,12 +35,6 @@ public class Snippets {
 
         Selenide.switchTo().frame("new");
         Selenide.switchTo().defaultContent(); // return from frame back to the main DOM
-
-        Selenide.switchTo().window("The Internet");
-
-        var cookie = new Cookie("foo", "bar");
-        WebDriverRunner.getWebDriver().manage().addCookie(cookie);
-
 
     }
 
@@ -117,7 +110,6 @@ public class Snippets {
         $("").shouldNotHave(text("abc"));
         $("").should(appear);
         $("").shouldNot(appear);
-
 
         //longer timeouts
         $("").shouldBe(visible, Duration.ofSeconds(30));
