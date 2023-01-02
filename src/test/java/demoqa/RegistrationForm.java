@@ -35,6 +35,5 @@ public class RegistrationForm {
         $("#submit").click();
 
         $("#example-modal-sizes-title-lg").shouldHave((text("Thanks for submitting the form")));
-        sleep(6000);
     }
 }

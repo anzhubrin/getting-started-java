@@ -15,6 +15,5 @@ public class HoverSolution {
         $(withText("Solutions")).hover();
         $(byText("Enterprise")).click();
         $("html").shouldHave(text("Build like the best"));
-        sleep(6000);
     }
 }
